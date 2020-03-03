@@ -3,31 +3,106 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Insert title here</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
 	</head>
 
 	<body>
 	
-		<header>
-			 Esto es un header.
-		</header>
+		<div id = "general">
+
+			<header>
+				Esto es un header.
+		   	</header>
+
+			   
+		   
+		   	<aside id = "left-aside">
+				
+				<button class="accordion">Section 1</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+				<button class="accordion">Section 2</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+				<button class="accordion">Section 3</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</aside>
+
+		   	<aside id = "right-aside">
+			   Esto es un aside a la derecha.
+		   	</aside>
+		   
+
+
+		   	<nav id = "horizontal-top-menu">
+				<ul>
+					<div id = "at-left-in-htm">
+						<li><a href = "https://google.es">Google</a>
+							<ul>
+								<li><a href = "https://google.es">Google</a></li>
+								<li><a href = "https://twitter.com">Twitter</a></li>
+								<li><a href = "https://twitch.tv">Twith</a></li>
+								<li id = "login-btn"><a href = "html/login.html">Login</a></li>
+							</ul>
+						</li>
+						<li><a href = "https://twitter.com">Twitter</a></li>
+						<li><a href = "https://twitch.tv">Twith</a></li>
+					</div>
+				
+					<div id = "at-right-in-htm">
+						<li id = "login-btn"><a href = "#" onclick="openForm()">Login</a></li>
+					</div>
+				
+				</ul>
+			</nav>
 		
+		   <section>
+			   <p>
+				   Esto es el contenido que hay en la web. 
+			   </p>
+		   </section>
+		   
+
+		   <!--POPUPS-->
+		   	<div class="form-popup" id="myForm">
+				<form action="/action_page.php" class="form-container">
+			  		<h1>Login</h1>
+		  
+			  		<label for="email"><b>Email</b></label>
+			  		<input type="text" placeholder="Enter Email" name="email" required>
+		  
+			  		<label for="psw"><b>Password</b></label>
+			  		<input type="password" placeholder="Enter Password" name="psw" required>
+		  
+			  		<button type="submit" class="btn">Login</button>
+			  		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				</form>
+		  	</div>
+		   
+		   <footer>
+			   Esto es un footer.
+			   <br/>
+			   Iconos de redes sociales diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+			    from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+				<br/>
+				Iconos web diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from 
+				<a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+			</footer>
+
+		</div>
 		
-		<aside id = "left-aside">
-			Esto es un aside a la izquierda.
-		</aside>
-		
-		
-		<aside id = "right-aside">
-			Esto es un aside a la derecha.
-		</aside>
-		
-		
-		<footer>
-			Esto es un footer.
-		</footer>
-	
-		
+		<!--Scripts-->
+		<script type="text/javascript" src="js/popups.js"></script>
+		<script type="text/javascript" src="js/sidebar-menu.js"></script>
 	
 	</body>
 	

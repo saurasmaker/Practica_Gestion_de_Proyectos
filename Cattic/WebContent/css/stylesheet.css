@@ -1,0 +1,75 @@
+
+@import url("horizontal-top-menu.css");
+@import url("sidebar-menu.css");
+@import url("popups.css");
+
+
+/***************************/
+/********* GENERAL *********/
+/***************************/
+body{
+	color: white;
+	background-image: url("https://stefanjugovic.com/wp-content/uploads/2019/10/videoblocks-network-on-a-black-background-cinematic-plexus-background-seamless-loop_hagskxz4rm_thumbnail-full01.png");
+	background-repeat: repeat;
+}	
+
+#general{
+	width: 80%;
+	margin: 0 auto;
+	border-left: solid black;
+	border-right: solid black;
+	background-color: rgb(24, 24, 24);
+}
+
+
+/**************************/
+/********* HEADER *********/
+/**************************/
+header{
+    clear: both;
+    background-color: aquamarine;
+}
+
+
+/**************************/
+/********* ASIDES *********/
+/**************************/
+aside{
+    background-color: coral;
+    height: 1000px;
+}
+
+#left-aside{
+	float: left;
+	width: 200px;
+}
+
+#right-aside{
+	width: 100px;
+	float: right;
+	padding: 20px;
+}
+
+
+/***************************/
+/********* SECTION *********/
+/***************************/
+section{
+	margin: 0 auto;
+	color: black;
+	background-color: white;
+	width: 80%;
+	height: 980px;
+	padding: 20px;
+	
+}
+
+
+/**************************/
+/********* FOOTER *********/
+/**************************/
+footer{
+    clear: both;
+    background-color: rgb(24, 24, 24);
+}
+
